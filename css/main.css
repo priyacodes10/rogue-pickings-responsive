@@ -51,6 +51,7 @@ header {
 	display: flex;
 	justify-content: center;
 	display: inline-block;
+	align-items:space-between;
 	
 }
 
@@ -63,28 +64,22 @@ header h1 span {
 	color: #77a466;
 }
 
-header nav {
-	padding: 46px 0;
-}
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.1em;
-	padding: 0 10px;
 	display: flex;
 	justify-content: center;
-	
-	
+	padding: 5px 10px 5px 0;
+		
 }
-
 
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	display: flex;
+	justify-content: center;
 }
 
 /*The widths are in a percentage!*/
@@ -120,7 +115,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 	display: flex;
@@ -128,15 +123,12 @@ header nav ul li a{
 }
 
 .section-one h3 {
-	padding: 10px 0;
 	display: flex;
 	flex-flow: row wrap;
 	
-
 }
 
 .section-two {
-	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 	display: flex;
 	flex-flow: row wrap;
@@ -147,18 +139,21 @@ header nav ul li a{
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
 	display: flex;
 	flex-flow: row wrap;
 
 }
 .menu {
 	list-style: none;
-	padding: 0;
+	
+
+	
 }
 .menu li {
-	padding: 10px 0;
+	padding: 2px 0 5px 0;
 	color:#77a466;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .reviews {
@@ -196,19 +191,28 @@ footer span {
 	justify-content: center;
 	align-items: center;
 	flex-grow: initial;
+
+   }
+   .header{
+	display: flex;
 	align-items: space-around;
+    justify-content: space-between;
    }
 
- .header nav ul li{
+   .header nav ul{
 	 display:flex;
 	 justify-content: center;
-	 display: flex;
+	 align-items: space-between;
+
 	
  }
  .flex-container{
 	 min-width: 768px;
-	
+	 display: flex;
+	 align-items: space-around;
+	justify-content: space-between;
  }
+
  .section-one{
 	display: flex;
 	flex-flow: column wrap;
