@@ -188,57 +188,70 @@ footer span {
 @media all and (min-width:768px) {
    .bottom-section{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-grow: initial;
-
-   }
-   .header{
-	display: flex;
-	align-items: space-around;
-    justify-content: space-between;
-   }
-
-   .header nav ul{
-	 display:flex;
-	 justify-content: center;
-	 align-items: space-between;
-
-	
- }
- .flex-container{
-	 min-width: 768px;
-	 display: flex;
-	 align-items: space-around;
 	justify-content: space-between;
- }
+	align-content: center;
+   }
 
- .section-one{
+.section-one{
 	display: flex;
-	flex-flow: column wrap;
-	flex-basis: initial;
-	
- }
-
- .section-two{
-display:flex;
-flex-flow: column wrap;
-flex-basis: initial;
-
- }
-
-
- .section-three{
+	justify-content:center;
+	width: 33%;
+	flex-flow: column;
+}
+.section-two{
 	display: flex;
+	width: 33%;
+	justify-content: center;
 	flex-flow: column wrap;
-	flex-basis: initial;
+}
+.section-three{   
+	display: flex;
+	justify-content: center;
+	width: 33%;
 	
-
- 
-    /* Desktop styles here */
-
-@media all and (min-width:1200px) {
 
 }
 
- 
+.address{
+	display: flex;
+	flex-flow: column wrap;
+
+	
+}
+
+
+    /* Desktop styles here */
+
+@media all and (min-width:1200px) {
+.bottom-section{
+	width: 100%;
+}
+
+.section-one{
+display: flex;
+justify-content: center;
+flex-basis: auto;
+
+}
+
+.section-two{
+display: flex;
+flex-basis: auto;
+}
+
+.section-three{
+display: flex;
+flex-basis: auto;
+}
+
+header nav ul {
+	display: flex;
+	align-content: flex-end;
+}
+header h1 {
+	width:initial;
+	padding: initial;
+	border-bottom: center;
+	border-width: 1200px;
+	text-align: left;
+  }
